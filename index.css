@@ -582,74 +582,131 @@ font-size: 0.9rem;
 
 /* ----------------products--------------------} */
 .quality {
-background-image: url;
-height: fit-content;
-background-color: #090909;
-display: flex;
-justify-content: space-around;
-gap: 20px;
-padding: 20px;
+  background-image: url;
+  height: fit-content;
+  background-color: #090909;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  
+  }
+  .head h1{
+  color: #52cb47;
+  background-color: black;
+  font-size: 40px;
+  padding-left: 500px;
+  margin:0 auto;
+  
+  }
+  
+  .quality div {
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  flex-basis: 300px; /* Make div widths consistent */
+  border: 4px solid #b6f7b4; 
+  border-radius: 10px; /* Slightly rounded corners */
+  background-color:white; 
+  transition: transform 0.3s ease; /* Animation on hover */
+  }
+  
+  .quality div:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  border-color:#52cb47; /* Brighter green on hover */
+  }
+  
+  .quality img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  
+  }
+  
+  .quality p {
+  color: #000000;
+  font-size: 18px;
+  margin-top: -20px;
+  margin-left:-25px ;
+  line-height: 1.5;
+  }
+  
+  @media (max-width: 800px) {
+  .head h1 {
+  font-size: 28px; /* Decrease the font size */
+  padding: 10px 0; /* Adjust padding to balance the smaller size */
+  text-align: center; /* Ensure the text is centered */
+  }
+  .quality {
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .quality div {
+  margin-bottom: 20px;
+  flex-basis: unset;
+  width: 90%;
+  }
+  }
+  /* <!-- -----------------Our Products-------------------------------------------- --> */
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #171515;
+} 
+
+.container {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #171515;
 }
-.head h1{
-color: #52cb47;
-background-color: black;
-font-size: 40px;
-padding-left: 40vw;
-margin:0 auto;
 
+.title {
+  font-size: 2em;
+  color: #f9f6f6;
+  margin-bottom: 20px;
 }
 
-.quality div {
-width: 200px;
-text-align: center;
-padding: 10px;
-flex-basis: 300px; /* Make div widths consistent */
-border: 4px solid #b6f7b4; 
-border-radius: 10px; /* Slightly rounded corners */
-background-color:transparent; 
-transition: transform 0.3s ease; /* Animation on hover */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-.quality div:hover {
-transform: scale(1.05); /* Slightly enlarge on hover */
-border-color:#52cb47; /* Brighter green on hover */
+.col {
+   flex: 1 ;
+  max-width: fit-content; 
+  text-align: center;
+  padding: 10px;
 }
 
-.quality img {
-width: 200px;
-height: 200px;
-border-radius: 8px;
-
+.col img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.quality p {
-color: #fff;
-font-size: 18px;
-margin-top: -20px;
-margin-left:-25px ;
-line-height: 1.5;
-}
-
-@media (max-width: 1000px) {
-.head h1 {
-font-size: 20px; /* Decrease the font size */
-padding: 10px 0; /* Adjust padding to balance the smaller size */
-text-align: center; /* Ensure the text is centered */
-
-}
-.quality {
-flex-direction: column;
-align-items: center;
-}
-
-.quality div {
-margin-bottom: 20px;
-flex-basis: unset;
-width: 90%;
-}
-}
-
+ @media (max-width: 1000px) {
+  /* .row {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping  
+    overflow: auto;
+    width: 50px;
+  } */
+   .col{
+    padding: 0px;
+   }
+  .col img{
+      width: 30px;
+      height: 30px;
+  } 
+} 
 /* -----------------------Footer------------------------------------ */
 .footer{
 max-width: 100%;
