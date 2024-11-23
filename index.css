@@ -465,7 +465,7 @@ width: 80px;
 border-radius: 50%;
 }
 }
-
+/* -------------------------usehair---------------------------------------------- */
 
 .usehair { 
 height: 100vh;
@@ -483,7 +483,7 @@ background-size: cover;
 .usehair h1 {
 margin-bottom: 90px;
 font-size: 2.5rem;
-color: #52cb47;
+color: white;
 }
 
 .steps {
@@ -500,17 +500,19 @@ display: flex;
 align-items: center;
 justify-content: flex-start;
 background-color: rgba(255, 255, 255, 0.9);
+/* flex-basis: unset; */
 padding: 20px;
-width: 250px; /* Increase width for oval shape */
-height: 150px; /* Reduced height to make it oval */
+width: 300px; 
+height: 200px;
 border-radius: 60px / 30px; /* Oval shape */
 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 transition: transform 0.3s ease;
-border: 5px solid rgb(7, 163, 7);
+border: 5px solid #2b9245;
 }
 
 .step-box:hover {
-transform: scale(1.15);
+transform: scale(1.05);
+
 }
 
 .step-box img {
@@ -531,7 +533,7 @@ margin: 0;
 height: fit-content;
 width: fit-content;
 font-size: 1rem;
-color: #090909;
+color: #000000;
 margin: 5px 0 0;
 }
 
@@ -592,7 +594,7 @@ font-size: 0.9rem;
   
   }
   .head h1{
-  color: #52cb47;
+  color: white;
   background-color: black;
   font-size: 40px;
   padding-left: 500px;
@@ -605,7 +607,7 @@ font-size: 0.9rem;
   text-align: center;
   padding: 10px;
   flex-basis: 300px; /* Make div widths consistent */
-  border: 4px solid #b6f7b4; 
+  border: 4px solid #000000; 
   border-radius: 10px; /* Slightly rounded corners */
   background-color:white; 
   transition: transform 0.3s ease; /* Animation on hover */
@@ -613,7 +615,7 @@ font-size: 0.9rem;
   
   .quality div:hover {
   transform: scale(1.05); /* Slightly enlarge on hover */
-  border-color:#52cb47; /* Brighter green on hover */
+  border-color:#000000; /* Brighter green on hover */
   }
   
   .quality img {
@@ -641,11 +643,16 @@ font-size: 0.9rem;
   flex-direction: column;
   align-items: center;
   }
+  .pro{
+    position: relative;
+    top: 10vh;
+  }
   
   .quality div {
   margin-bottom: 20px;
   flex-basis: unset;
-  width: 90%;
+  width: 70%;
+  /* height: 20%; */
   }
   }
   /* <!-- -----------------Our Products-------------------------------------------- --> */
@@ -699,6 +706,7 @@ body {
     overflow: auto;
     width: 50px;
   } */
+   
    .col{
     padding: 0px;
    }
